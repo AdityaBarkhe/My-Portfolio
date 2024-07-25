@@ -73,7 +73,6 @@ document.addEventListener(
   !1
 );
 
-
 document.addEventListener("DOMContentLoaded", function () {
   function changeBackground() {
     const colors = [
@@ -99,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
         gradients[currentIndex];
       document.getElementById("footer").style.background =
         gradients[currentIndex];
-    }, 2000); // Change every 3 seconds
+    }, 2000); // Change every 2 seconds
   }
 
   window.onload = changeBackground;
