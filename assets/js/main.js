@@ -72,3 +72,35 @@ document.addEventListener(
   },
   !1
 );
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  function changeBackground() {
+    const colors = [
+      "#1488CC",
+      "#4bcc14",
+      "#FF5733",
+      "#33FF57",
+      "#3357FF",
+      "#FF33A1",
+    ];
+    const gradients = [
+      "linear-gradient(to right, #4bcc14, #1488CC)",
+      "linear-gradient(to right, #FF5733, #FF33A1)",
+      "linear-gradient(to right, #33FF57, #3357FF)",
+      "linear-gradient(to right, #3357FF, #FF33A1)",
+    ];
+
+    let currentIndex = 0;
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % colors.length;
+      document.getElementById("particles-js").style.background =
+        gradients[currentIndex];
+      document.getElementById("footer").style.background =
+        gradients[currentIndex];
+    }, 2000); // Change every 3 seconds
+  }
+
+  window.onload = changeBackground;
+});
