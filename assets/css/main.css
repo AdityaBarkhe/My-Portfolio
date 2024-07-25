@@ -4841,7 +4841,8 @@ a img {
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed
+    background-attachment: fixed;
+    transition: background .1s ease-in-out;
 }
 
 #particles-js .particles-js-canvas-el {
@@ -5128,6 +5129,13 @@ a img {
     margin-top: 100px;
     text-align: center;
     color: #fff
+}
+
+#footer{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: background .1s ease-in-out;
 }
 
 .footer .love {
