@@ -78,14 +78,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const colors = [
       "#1488CC",
       "#4bcc14",
-      "#FF5733",
+      "#ffa733",
       "#33FF57",
       "#3357FF",
-      "#FF33A1",
+      "#6633a1",
     ];
     const gradients = [
       "linear-gradient(to right, #4bcc14, #1488CC)",
-      "linear-gradient(to right, #FF5733, #FF33A1)",
+      "linear-gradient(to right, #ffa733, #6633a1)",
       "linear-gradient(to right, #33FF57, #3357FF)",
       "linear-gradient(to right, #3357FF, #FF33A1)",
     ];
